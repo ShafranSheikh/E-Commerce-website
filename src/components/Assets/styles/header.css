@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 /* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nerko One';
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-}
 
 .navbar {
     display: flex;

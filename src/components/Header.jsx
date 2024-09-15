@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <h2><span>S</span>HAFRAN <span>S</span>HOES</h2>
+                <h2><span>S</span>hafran <span>S</span>hoes</h2>
             </div>
             <ul className={isMobile ? "navbar-links-mobile" : "navbar-links"} onClick={() => setIsMobile(false)}>
                 <li><a href="#home">Home</a></li>

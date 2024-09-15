@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nerko One';
+}
+
+.container{
+    display: flex;
+    height:250px;
+    background-color: #A91D3A;
+}
+.container .links,.container .social{
+    margin :40px 100px;
+}
+.container .links ul li{
+    color:#EEEEEE;
+    line-height: 2;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.container .social{
+    display:flex;
+    justify-content: space-between;
+
+}
