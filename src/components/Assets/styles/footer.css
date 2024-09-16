@@ -1,28 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nerko One';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    font-family: "Playfair Display";
 }
-
-.container{
+.footer {
+    background-color: #151515 ;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
     display: flex;
-    height:250px;
-    background-color: #A91D3A;
-}
-.container .links,.container .social{
-    margin :40px 100px;
-}
-.container .links ul li{
-    color:#EEEEEE;
-    line-height: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 15px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 25px;
-
-}
-.container .social{
-    display:flex;
-    justify-content: space-between;
-
-}
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  .social-icons .icons:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
