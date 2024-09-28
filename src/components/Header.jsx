@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../components/Assets/styles/header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -18,16 +19,13 @@ const Header = () => {
                 <li><a href="#mens">Mens</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                {/* Show Account link in mobile view */}
                 {isMobile && (
                     <li><a href="#account">Account</a></li>
                 )}
             </ul>
             {/* User icon only visible in desktop view */}
             <div className="user-icon">
-                <a href="#account">
-                    <i className="fas fa-user-circle"></i>
-                </a>
+                <Link to="/UserLogin"><i className="fas fa-user-circle"></i></Link>
             </div>
             <button className="mobile-menu-icon" onClick={handleMenuToggle}>
                 {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
