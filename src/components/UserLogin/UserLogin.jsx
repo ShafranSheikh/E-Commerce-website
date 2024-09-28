@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 function UserLogin() {
-    const [username,setUsername] = useState('');
+    const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:300/api/',{username, password});
+            const response = await axios.post('http://localhost:300/api/',{email, password});
             if(response.data.success){
                 console.log("Login successful");
             }else{
@@ -26,13 +26,13 @@ function UserLogin() {
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Login</h2>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="email">Email</label>
           <input
             type="text"
-            name="username"
-            placeholder="Enter your username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            name="Email"
+            placeholder="Enter your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="form-group">

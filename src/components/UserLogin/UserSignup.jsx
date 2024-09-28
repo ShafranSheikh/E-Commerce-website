@@ -5,14 +5,14 @@ import axios from "axios";
 function UserSignup(props) {
   const [firstname, setFirstName] = useState('');
   const [lastname, setLastname] = useState('');
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmpassword, setConfirmpassword] = useState('');
   const [message, setMessage] = useState('');
   const handleSubmit = async(e) =>{
     e.preventDefault();
     try{
-      const response  = await axios.post('http://localhost:3000/api/UserSignup',{firstname,lastname,username,password,confirmpassword});
+      const response  = await axios.post('http://localhost:3000/api/UserSignup',{firstname,lastname,email,password,confirmpassword});
       if(response.data.success){
         setMessage("User Registered to the account successfully");
       }else {
@@ -35,8 +35,8 @@ function UserSignup(props) {
           <input type="text" name="lastName" placeholder="Enter your last name" value={lastname} onChange={(e)=> setLastname(e.target.value)}/>
         </div>
         <div className="form-group">
-          <label htmlFor="username">Preferred Username</label>
-          <input type="text" name="username" placeholder="Enter your preferred username" value={username} onChange={(e)=> setUsername(e.target.value)}/>
+          <label htmlFor="username">Email</label>
+          <input type="text" name="username" placeholder="Enter your preferred username" value={email} onChange={(e)=> setEmail(e.target.value)}/>
         </div>
         <div className="form-group">
           <label htmlFor="password">Password</label>
